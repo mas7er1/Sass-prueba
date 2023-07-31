@@ -1,7 +1,9 @@
+@use 'variaciones';
 .caja{
     h2{
         color: black;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:variaciones.$color-primario;
     }
     p{
         color: aqua;
