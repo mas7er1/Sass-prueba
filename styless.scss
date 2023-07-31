@@ -3,15 +3,18 @@ $color-principal: grey;
 $color-letra: rgb(198, 134, 38);
 $color-parrafo: rgb(0, 136, 255);
 $ancho: 720px;
+$display: 'display';
 
 body{
     background:$color-principal;
 }
 h1{
     color: $color-letra;
+    #{$display}:flex;
 }
 p{
     color:$color-parrafo;
+    justify-content: center;
     &:hover{
         color:red;
     }
@@ -28,4 +31,9 @@ h2{
 }
 .caja{
     @include caja_personalizada($fondo: yellow)
+}
+@media (width:720px){
+    p{
+        justify-content: flex-end;
+    }
 }
